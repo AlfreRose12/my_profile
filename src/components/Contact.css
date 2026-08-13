@@ -1,0 +1,130 @@
+.contact-section {
+  padding: var(--section-gap) 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 56px 32px 40px;
+  text-decoration: none !important;
+  opacity: 0;
+  transform: translateY(20px);
+  /* Unificamos todas las propiedades animables en un solo transition */
+  transition: opacity 0.5s ease, transform 0.3s ease, border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.contact-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-glow);
+}
+
+.contact-highlight {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: var(--color-primary-dim);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.contact-card:hover .contact-icon {
+  animation: contactBounce 0.4s ease;
+}
+
+@keyframes contactBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.contact-name {
+  font-size: 20px;
+  color: var(--color-text-heading);
+}
+
+.contact-description {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.contact-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-top: auto;
+}
+
+.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  transition: color var(--transition-fast), gap var(--transition-fast);
+}
+
+.contact-card:hover .contact-cta {
+  color: var(--color-primary);
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 56px 20px 40px;
+  }
+}

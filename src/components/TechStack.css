@@ -1,0 +1,102 @@
+.tech-section {
+  padding: var(--section-gap) 0;
+  background: var(--color-bg-darker);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.tech-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.tech-category {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.tech-category.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-category:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-glow);
+}
+
+.tech-category-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.tech-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+}
+
+.tech-icons-img {
+  max-width: 100%;
+  height: auto;
+  filter: brightness(0.9) contrast(1.1);
+  transition: filter var(--transition-base);
+}
+
+.tech-category:hover .tech-icons-img {
+  filter: brightness(1.1) contrast(1.05);
+}
+
+.tech-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.tech-note p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.tech-note strong {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-category {
+    padding: 24px;
+  }
+
+  .tech-icons-wrapper {
+    min-height: 44px;
+  }
+}
