@@ -1,5 +1,4 @@
 import { useScrollAnimation, useStaggerAnimation } from '../hooks/useScrollAnimation'
-import logoSpeira from '../assets/logo_speira.png'
 import './Projects.css'
 
 const projects = [
@@ -15,9 +14,18 @@ const projects = [
   {
     name: 'Speira',
     url: 'https://github.com/AlfreRose12/Speira',
-    logo: logoSpeira,
+    logo: 'https://res.cloudinary.com/ooa1pvyl/image/upload/v1786538540/logo_speira.png',
     description: 'Aplicación móvil para el monitoreo de espirulina, complementada con tecnología IoT. Proyecto de estadía de TSU desarrollado en colaboración con compañeros de carrera.',
     tags: ['Ionic', 'IoT', 'Mobile'],
+    status: 'Finalizado',
+    statusType: 'completed',
+  },
+  {
+    name: 'Odontologia Integral',
+    url: 'https://github.com/diegod332/Proyecto_Integrador_4A_TIDSM_EQUIPO_6.git',
+    logo: 'https://res.cloudinary.com/ooa1pvyl/image/upload/v1787553756/logo_od.png',
+    description: 'Sistema integral para la gestión de citas y pacientes en una clínica dental, desarrollado como proyecto integrador de la carrera de TSU.',
+    tags: ['Angular', 'Docker', 'Android'],
     status: 'Finalizado',
     statusType: 'completed',
   },
