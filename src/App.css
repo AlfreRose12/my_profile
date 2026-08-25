@@ -1,3 +1,26 @@
 main {
   width: 100%;
 }
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--color-text-heading);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  text-align: center;
+}

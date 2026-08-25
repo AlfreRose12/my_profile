@@ -4,7 +4,7 @@ import './Navbar.css'
 const links = [
   { href: '#filosofia', label: 'Filosofía' },
   { href: '#servicios', label: 'Servicios' },
-  { href: '#tecnologias', label: 'Tech Stack' },
+  { href: '#tecnologias', label: 'Tecnologías' },
   { href: '#entorno', label: 'Entorno' },
   { href: '#proyectos', label: 'Proyectos' },
 ]

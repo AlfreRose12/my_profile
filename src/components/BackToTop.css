@@ -2,13 +2,13 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  z-index: 1000;
+  z-index: 999;
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
-  background: var(--color-primary);
-  color: var(--color-bg);
-  border: none;
+  background: var(--color-bg-card);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-glass-border);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
   opacity: 0;
   pointer-events: none;
   transform: translateY(12px);
-  transition: opacity var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  transition: opacity var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base), color var(--transition-base), background var(--transition-base), border-color var(--transition-base);
 }
 
 .back-to-top.visible {
@@ -26,5 +26,8 @@
 }
 
 .back-to-top:hover {
-  box-shadow: var(--shadow-glow);
+  color: var(--color-primary);
+  border-color: rgba(173, 255, 47, 0.2);
+  background: rgba(173, 255, 47, 0.06);
+  box-shadow: 0 4px 16px rgba(173, 255, 47, 0.08);
 }

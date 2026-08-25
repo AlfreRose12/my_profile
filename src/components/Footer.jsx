@@ -3,7 +3,7 @@ import './Footer.css'
 const navLinks = [
   { href: '#filosofia', label: 'Filosofía' },
   { href: '#servicios', label: 'Servicios' },
-  { href: '#tecnologias', label: 'Tech Stack' },
+  { href: '#tecnologias', label: 'Tecnologías' },
   { href: '#proyectos', label: 'Proyectos' },
   { href: '#contacto', label: 'Contacto' },
 ]

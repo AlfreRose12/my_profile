@@ -44,7 +44,6 @@ export default function Philosophy() {
         </div>
 
         <div className="philosophy-note">
-          <span className="note-icon">💡</span>
           <p>
             Esta mentalidad de <strong>Desarrollo Asistido por IA</strong> me permite ser altamente eficiente, diagnosticar errores en tiempo record y adaptarme a nuevas tecnologias con agilidad.
           </p>

@@ -35,12 +35,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Indicador de Scroll */}
       <a href="#filosofia" className="hero-scroll-indicator" aria-label="Desplazarse hacia abajo">
+        <span className="scroll-text">Desplázate</span>
         <span className="scroll-arrow"></span>
       </a>
 
-      <div className="hero-gradient" />
     </section>
   )
 }
