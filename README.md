@@ -5,12 +5,13 @@ Portafolio personal de Alfredo Rosas Espinosa (`@alfrerose.dev`), Ingeniero en D
 ## Secciones del sitio
 
 - **Hero** — Presentación y llamadas a la acción (Ver Servicios / Cotizar Proyecto).
-- **Filosofía** — Enfoque de desarrollo asistido por IA.
-- **Servicios** — Sitios web, apps móviles, formularios, hospedaje, soluciones con IA y soporte.
+- **Filosofía** — Claridad, método y resultados: cómo abordo cada proyecto.
+- **Servicios** — Aplicaciones móviles, páginas web profesionales, invitaciones digitales, sistemas de agendamiento e integración con WhatsApp.
 - **Tech Stack** — Tecnologías y frameworks con los que trabajo.
 - **Entorno de trabajo** — Infraestructura local y en la nube (dual-boot / VPS).
-- **Proyectos** — Proyectos destacados con enlace a GitHub.
-- **Contacto** — Instagram y correo electrónico.
+- **Proyectos** — Proyectos destacados desarrollados en equipo, con enlace a GitHub.
+- **Trabajos Independientes** — Invitaciones digitales y entregas rápidas realizadas de forma individual.
+- **Contacto** — Instagram, formulario de cotización y correo electrónico.
 
 ## Stack tecnológico
 

@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
 
         <p className="hero-tagline">
-          Transformo ideas en páginas web y herramientas modernas impulsadas por <span className="highlight">IA</span> para hacer crecer tu negocio.
+          Transformo ideas en páginas web, aplicaciones y <span className="highlight">herramientas digitales</span> modernas para hacer crecer tu negocio.
         </p>
 
         {/* Botones de Llamada a la Acción (CTA) */}

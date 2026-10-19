@@ -1,0 +1,7 @@
+/* Trabajos Independientes: reutiliza Projects.css (carrusel, tarjetas, dots)
+   y solo cambia el fondo de la sección para alternar con Proyectos
+   (Proyectos usa --color-bg-darker, esta sección el fondo base). */
+.independent-section {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}

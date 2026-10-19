@@ -7,6 +7,7 @@ const links = [
   { href: '#tecnologias', label: 'Tecnologías' },
   { href: '#entorno', label: 'Entorno' },
   { href: '#proyectos', label: 'Proyectos' },
+  { href: '#independientes', label: 'Independientes' },
 ]
 
 export default function Navbar() {

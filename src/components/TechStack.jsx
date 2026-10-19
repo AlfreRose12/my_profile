@@ -36,7 +36,6 @@ const categories = [
       { name: 'Anaconda', icon: 'anaconda' },
       { name: 'PostgreSQL', icon: 'postgres' },
       { name: 'MongoDB', icon: 'mongodb' },
-      { name: 'Firebase', icon: 'firebase' },
     ],
   },
   {
@@ -45,6 +44,8 @@ const categories = [
       { name: 'Docker', icon: 'docker' },
       { name: 'Vercel', icon: 'vercel' },
       { name: 'Netlify', icon: 'netlify' },
+      { name: 'Firebase', icon: 'firebase' },
+      { name: 'Supabase', icon: 'supabase' },
     ],
   },
   {
@@ -95,7 +96,7 @@ export default function TechStack() {
 
         <div className="tech-note">
           <p>
-            <strong>Nota:</strong> Estas son las tecnologías con las que cuento con conocimiento; algunas las he trabajado de forma individual y otras en conjunto con la IA para optimizar y agilizar los flujos de trabajo.
+            <strong>Nota:</strong> Estas son las tecnologías con las que trabajo habitualmente; algunas las he utilizado en proyectos personales y otras en proyectos académicos o en equipo.
           </p>
         </div>
       </div>

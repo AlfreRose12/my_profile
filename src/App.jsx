@@ -5,6 +5,7 @@ import Services from './components/Services'
 import TechStack from './components/TechStack'
 import WorkEnv from './components/WorkEnv'
 import Projects from './components/Projects'
+import IndependentWork from './components/IndependentWork'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
@@ -21,6 +22,7 @@ function App() {
         <TechStack />
         <WorkEnv />
         <Projects />
+        <IndependentWork />
         <Contact />
       </main>
       <Footer />

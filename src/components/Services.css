@@ -10,13 +10,16 @@
   transform: translateY(0);
 }
 
+/* 5 tarjetas: grilla de 6 columnas (3 tarjetas por fila, cada una span 2)
+   para poder centrar la última fila que queda con 2 tarjetas */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
 }
 
 .service-card {
+  grid-column: span 2;
   background: var(--color-bg-card);
   backdrop-filter: blur(12px);
   border: 1px solid var(--color-glass-border);
@@ -25,6 +28,15 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease, border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+/* Centrado de la última fila (tarjetas 4 y 5) */
+.service-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.service-card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 .service-card.visible {
@@ -65,6 +77,12 @@
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card,
+  .service-card:nth-child(4),
+  .service-card:nth-child(5) {
+    grid-column: auto;
   }
 }
 
