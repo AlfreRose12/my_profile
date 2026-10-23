@@ -26,14 +26,32 @@ const education = [
 
 const certifications = [
   {
-    name: 'Nombre de la certificación',
-    issuer: 'Emisor',
-    year: '2025',
-    url: 'https://www.credly.com/badges/ID',
+    name: 'Introducción a la IA moderna',
+    issuer: 'Cisco Networking Academy',
+    year: '2026',
+    url: 'https://www.credly.com/badges/b166ae73-db41-4df3-9c74-40152b1bc75e/public_url',
   },
   {
-    name: 'Nombre de la certificación',
-    issuer: 'Emisor',
+    name: 'Introducción a la Ciencia de Datos',
+    issuer: 'Cisco Networking Academy',
+    year: '2026',
+    url: 'https://www.credly.com/badges/19040293-2efa-4530-8451-bf4f047090ad/public_url',
+  },
+  {
+    name: 'Conciencia sobre seguridad y protección digital',
+    issuer: 'Cisco Networking Academy',
+    year: '2026',
+    url: 'https://www.credly.com/badges/1c2049f7-d8f4-4448-8e1b-87a455b7a02c/public_url',
+  },
+  {
+    name: 'CCNAv7: Switching Routing and Wireless Essentials',
+    issuer: 'Cisco Networking Academy',
+    year: '2024',
+    url: 'https://www.credly.com/badges/64acb57f-7626-451d-a731-5d19cfa7dc4e/public_url',
+  },
+  {
+    name: 'NDG Linux Essentials',
+    issuer: 'Cisco Networking Academy',
     year: '2024',
     url: '',
   },
@@ -110,7 +128,7 @@ export default function Education() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Ver credencial
+                        Ver insignía
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                           <path d="M15 3h6v6" />
