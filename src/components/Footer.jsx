@@ -78,20 +78,21 @@ export default function Footer() {
 
           <div className="footer-social">
             <span className="footer-heading">Conectemos</span>
-            <div className="footer-social-icons">
+            <ul className="footer-social-list">
               {socials.map((s) => (
-                <a
-                  key={s.name}
-                  href={s.url}
-                  target={s.name !== 'Email' ? '_blank' : undefined}
-                  rel={s.name !== 'Email' ? 'noopener noreferrer' : undefined}
-                  className="footer-social-icon"
-                  aria-label={s.name}
-                >
-                  {s.icon}
-                </a>
+                <li key={s.name}>
+                  <a
+                    href={s.url}
+                    target={s.name !== 'Email' ? '_blank' : undefined}
+                    rel={s.name !== 'Email' ? 'noopener noreferrer' : undefined}
+                    className="footer-social-link"
+                  >
+                    <span className="footer-social-icon">{s.icon}</span>
+                    <span className="footer-social-label">{s.name}</span>
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 
