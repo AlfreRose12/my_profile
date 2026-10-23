@@ -15,8 +15,8 @@ se navegan con scroll suave.
 - **Idioma:** todo el contenido visible, los comentarios del código y la documentación están en
   **español**. Mantén ese idioma en textos, docs y mensajes de commit.
 - **Repo:** `https://github.com/AlfreRose12/my_profile` — rama única `main`.
-- **Producción:** `https://alfrerosedev.vercel.app/` (Vercel). La marca declarada en el README es
-  `alfrerose.dev` (ver §7 sobre dominios).
+- **Producción:** `https://alfrerosedev.com/` (dominio propio; el deploy vive en Vercel). La marca
+  declarada en el README es `alfrerose.dev` (ver §7 sobre dominios).
 
 ---
 
@@ -218,9 +218,11 @@ Implicaciones que debes respetar:
   `rewrites` ni `cleanUrls`.
 - `dist/` está en `.gitignore` y **no está trackeado**: nunca lo subas a git (a diferencia de
   `public/`, que sí se commitea).
+- En Vercel, `alfrerosedev.com` es el **dominio principal**; `www.alfrerosedev.com` y
+  `alfrerosedev.vercel.app` **redirigen** al apex (configuración del panel, no del repo).
 - Si cambia el dominio, hay que actualizar **4 lugares** que hoy hardcodean
-  `https://alfrerosedev.vercel.app/`:
-  1. `index.html` → `og:url`, `og:image`, `twitter:url`, `twitter:image`
+  `https://alfrerosedev.com/`:
+  1. `index.html` → `canonical`, `og:url`, `og:image`, `twitter:url`, `twitter:image`
   2. `public/sitemap.xml` → `<loc>` y `<lastmod>`
   3. `public/robots.txt` → `Sitemap:`
   4. `README.md` (menciona la marca `alfrerose.dev`)
