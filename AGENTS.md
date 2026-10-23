@@ -73,6 +73,7 @@ src/
   index.css             # ⭐ tokens globales (:root), reset, scrollbar, tipografía
   hooks/
     useScrollAnimation.js  # useScrollAnimation() y useStaggerAnimation()
+    useActiveSection.js    # scrollspy del Navbar: devuelve '#seccion' activa
   assets/               # imágenes importadas desde JS (Vite las hashea)
   components/           # un componente + su CSS con el mismo nombre
     Navbar, Hero, ParticleBackground, Philosophy, Education, Services, TechStack,
@@ -180,8 +181,10 @@ Gotchas conocidas:
    CSS el estado inicial + `.visible` (ver §4).
 4. Registrar el componente en `src/App.jsx` en la posición visual deseada.
 5. Agregar el enlace en `Navbar.jsx` (`links`) y/o `Footer.jsx` (`navLinks`).
-   ⚠️ Hoy están **desfasados a propósito**: el Navbar no incluye `#contacto` y el Footer no
-   incluye `#entorno`. Si modificas uno, revisa el otro para que la navegación siga coherente.
+   ⚠️ El Navbar usa jerarquía: `#filosofia`/`#formacion` viven dentro de "Sobre mí" y
+   `#proyectos`/`#independientes` dentro de "Proyectos" (ítems con `children` en `links`);
+   también hay que agregar el `id` a la lista `sectionIds` para el scrollspy. El Footer va
+   plano e incluye `#formacion` y `#contacto`. Si modificas uno, revisa el otro.
 6. Si la sección muestra imágenes de un dominio nuevo → añadirlo al `img-src` de `vercel.json`.
 7. Validar: lint + build + revisión visual en 375 px, 768 px y escritorio.
 
