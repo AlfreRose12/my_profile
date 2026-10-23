@@ -4,7 +4,8 @@ import './Education.css'
 /*
   EDUCACIÓN Y CERTIFICACIONES
   Edita los arrays con tus datos reales:
-  - `education`: título, institución, periodo y estado ('Titulado' | 'En curso').
+  - `education`: título, institución, periodo y estado
+    ('Titulado' | 'Egresado' | 'En curso').
   - `certifications`: nombre, emisor, año y `url` de la credencial
     (Credly o diploma). Si `url` está vacío, no se muestra el enlace.
 */
@@ -19,7 +20,7 @@ const education = [
     title: 'TSU en Desarrollo de Software Multiplataforma',
     institution: 'Universidad Tecnológica del Centro de Veracruz',
     period: '2021 — 2023',
-    status: 'Titulado',
+    status: 'Egresado',
   },
 ]
 
@@ -52,7 +53,12 @@ const awardIcon = (
   </svg>
 )
 
-const statusClass = (status) => (status === 'En curso' ? 'in-progress' : 'completed')
+// 'En curso' → índigo · 'Titulado' → verde · el resto ('Egresado', 'Título en trámite') → gris neutro
+const statusClass = (status) => {
+  if (status === 'En curso') return 'in-progress'
+  if (status === 'Titulado') return 'completed'
+  return 'neutral'
+}
 
 export default function Education() {
   const sectionRef = useScrollAnimation()
