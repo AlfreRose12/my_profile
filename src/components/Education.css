@@ -12,9 +12,11 @@
 
 .education-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 32px;
   align-items: start;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .education-group-title {
@@ -137,7 +139,6 @@
 
 @media (max-width: 768px) {
   .education-grid {
-    grid-template-columns: 1fr;
     gap: 28px;
   }
 }
