@@ -1,18 +1,24 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/icono_personal.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio de Alfredo Rosas Espinosa — Ingeniero en Desarrollo y Gestión de Software" />
     <meta name="theme-color" content="#1A1E2E" />
+
+    <!-- SEO básico -->
+    <title>Alfredo Rosas | Desarrollo Web y Apps — alfrerose.dev</title>
+    <meta name="description" content="Desarrollo páginas web, aplicaciones móviles e invitaciones digitales a la medida. Cotiza tu proyecto con Alfredo Rosas en Veracruz, México." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <link rel="canonical" href="https://alfrerosedev.com/" />
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="alfrerose.dev" />
+    <meta property="og:locale" content="es_MX" />
     <meta property="og:url" content="https://alfrerosedev.com/" />
-    <meta property="og:title" content="Alfredo Rosas Espinosa — Dev Portfolio" />
-    <meta property="og:description" content="Portafolio de Alfredo Rosas Espinosa — Ingeniero en Desarrollo y Gestión de Software" />
+    <meta property="og:title" content="Alfredo Rosas Espinosa — Desarrollo Web y Apps a la medida" />
+    <meta property="og:description" content="Páginas web, apps, invitaciones digitales y agendamiento a la medida. Cotiza tu proyecto con Alfredo Rosas, desarrollador en Veracruz, México." />
     <meta property="og:image" content="https://alfrerosedev.com/banner_personal.jpg" />
     <meta property="og:image:secure_url" content="https://alfrerosedev.com/banner_personal.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -22,14 +28,61 @@
     <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://alfrerosedev.com/" />
-    <meta name="twitter:title" content="Alfredo Rosas Espinosa — Dev Portfolio" />
-    <meta name="twitter:description" content="Portafolio de Alfredo Rosas Espinosa — Ingeniero en Desarrollo y Gestión de Software" />
+    <meta name="twitter:title" content="Alfredo Rosas Espinosa — Desarrollo Web y Apps a la medida" />
+    <meta name="twitter:description" content="Páginas web, apps, invitaciones digitales y agendamiento a la medida. Cotiza tu proyecto con Alfredo Rosas, desarrollador en Veracruz, México." />
     <meta name="twitter:image" content="https://alfrerosedev.com/banner_personal.jpg" />
 
-    <title>alfrerose.dev</title>
+    <!-- Datos estructurados: sitio web + persona (aparición en Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://alfrerosedev.com/#website",
+          "url": "https://alfrerosedev.com/",
+          "name": "alfrerose.dev",
+          "description": "Portafolio y servicios de desarrollo de software de Alfredo Rosas Espinosa.",
+          "inLanguage": "es-MX",
+          "publisher": { "@id": "https://alfrerosedev.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://alfrerosedev.com/#person",
+          "name": "Alfredo Rosas Espinosa",
+          "alternateName": "Alfre Rose",
+          "jobTitle": "Ingeniero en Desarrollo y Gestión de Software",
+          "url": "https://alfrerosedev.com/",
+          "image": "https://alfrerosedev.com/banner_personal.jpg",
+          "email": "alfrerose.dev@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Veracruz",
+            "addressCountry": "MX"
+          },
+          "sameAs": [
+            "https://github.com/AlfreRose12",
+            "https://www.instagram.com/alfrerose.dev"
+          ],
+          "knowsAbout": [
+            "Desarrollo web",
+            "Aplicaciones móviles",
+            "Invitaciones digitales",
+            "Sistemas de agendamiento",
+            "Integración con WhatsApp"
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Alfredo Rosas Espinosa — Desarrollo Web y Apps a la medida</h1>
+      <p>Portafolio de servicios: páginas web profesionales, aplicaciones móviles, invitaciones digitales, sistemas de agendamiento e integración con WhatsApp.</p>
+      <p>Contacto: <a href="mailto:alfrerose.dev@gmail.com">alfrerose.dev@gmail.com</a></p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
