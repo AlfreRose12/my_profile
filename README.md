@@ -6,6 +6,7 @@ Portafolio personal de Alfredo Rosas Espinosa (`@alfrerose.dev`), Ingeniero en D
 
 - **Hero** — Presentación y llamadas a la acción (Ver Servicios / Cotizar Proyecto).
 - **Filosofía** — Claridad, método y resultados: cómo abordo cada proyecto.
+- **Educación y Certificaciones** — Formación académica y credenciales (Credly).
 - **Servicios** — Aplicaciones móviles, páginas web profesionales, invitaciones digitales, sistemas de agendamiento e integración con WhatsApp.
 - **Tech Stack** — Tecnologías y frameworks con los que trabajo.
 - **Entorno de trabajo** — Infraestructura local y en la nube (dual-boot / VPS).

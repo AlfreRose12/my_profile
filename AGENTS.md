@@ -75,7 +75,7 @@ src/
     useScrollAnimation.js  # useScrollAnimation() y useStaggerAnimation()
   assets/               # imágenes importadas desde JS (Vite las hashea)
   components/           # un componente + su CSS con el mismo nombre
-    Navbar, Hero, ParticleBackground, Philosophy, Services, TechStack,
+    Navbar, Hero, ParticleBackground, Philosophy, Education, Services, TechStack,
     WorkEnv, Projects, IndependentWork, Contact, Footer, BackToTop
     # IndependentWork reutiliza Projects.css (carrusel) + su propio
     # IndependentWork.css solo para cambiar el fondo de la sección
@@ -85,7 +85,7 @@ README.md               # doc pública del proyecto
 
 **Orden visual de secciones** (definido en `src/App.jsx`):
 
-`Navbar` → `main` [`Hero`, `Philosophy`, `Services`, `TechStack`, `WorkEnv`, `Projects`,
+`Navbar` → `main` [`Hero`, `Philosophy`, `Education`, `Services`, `TechStack`, `WorkEnv`, `Projects`,
 `IndependentWork`, `Contact`] → `Footer` → `BackToTop`.
 
 La navegación es por anclas: `Navbar.jsx` y `Footer.jsx` contienen las listas de enlaces
@@ -106,7 +106,7 @@ La navegación es por anclas: `Navbar.jsx` y `Footer.jsx` contienen las listas d
 - **El contenido está hardcodeado** como `const`/arrays al inicio de cada archivo:
   `services` (Services.jsx), `projects` (Projects.jsx **e** IndependentWork.jsx),
   `categories` (TechStack.jsx), `contactMethods` (Contact.jsx), `links` (Navbar.jsx),
-  `navLinks`/`socials` (Footer.jsx).
+  `navLinks`/`socials` (Footer.jsx), `education`/`certifications` (Education.jsx).
   Para cambiar textos o agregar proyectos/servicios, **edita esos arrays**; no crees JSON, CMS ni
   archivos de datos aparte.
 - **Cards de proyectos con acciones condicionales:** cada elemento de `projects` acepta `url`

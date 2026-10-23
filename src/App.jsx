@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Philosophy from './components/Philosophy'
+import Education from './components/Education'
 import Services from './components/Services'
 import TechStack from './components/TechStack'
 import WorkEnv from './components/WorkEnv'
@@ -18,6 +19,7 @@ function App() {
       <main>
         <Hero />
         <Philosophy />
+        <Education />
         <Services />
         <TechStack />
         <WorkEnv />

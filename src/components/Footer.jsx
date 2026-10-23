@@ -2,6 +2,7 @@ import './Footer.css'
 
 const navLinks = [
   { href: '#filosofia', label: 'Filosofía' },
+  { href: '#formacion', label: 'Educación' },
   { href: '#servicios', label: 'Servicios' },
   { href: '#tecnologias', label: 'Tecnologías' },
   { href: '#proyectos', label: 'Proyectos' },
