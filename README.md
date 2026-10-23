@@ -12,7 +12,7 @@ Portafolio personal de Alfredo Rosas Espinosa (`@alfrerose.dev`), Ingeniero en D
 - **Entorno de trabajo** — Infraestructura local y en la nube (dual-boot / VPS).
 - **Proyectos** — Proyectos destacados desarrollados en equipo, con enlace a GitHub.
 - **Trabajos Independientes** — Invitaciones digitales y entregas rápidas realizadas de forma individual.
-- **Contacto** — Instagram, formulario de cotización y correo electrónico.
+- **Contacto** — Instagram, formulario de cotización y correo electrónico (LinkedIn en el pie de página).
 
 ## Stack tecnológico
 
