@@ -1,4 +1,5 @@
 import { useScrollAnimation, useStaggerAnimation } from '../hooks/useScrollAnimation'
+import SkeletonImage from './SkeletonImage'
 import './TechStack.css'
 
 const categories = [
@@ -80,7 +81,7 @@ export default function TechStack() {
               <div className="tech-list">
                 {cat.techs.map((tech) => (
                   <div className="tech-item" key={tech.name}>
-                    <img
+                    <SkeletonImage
                       src={`https://skillicons.dev/icons?i=${tech.icon}`}
                       alt={tech.name}
                       className="tech-icon-img"

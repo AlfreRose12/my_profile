@@ -70,7 +70,7 @@
   width: 28px;
   height: 28px;
   object-fit: contain;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease, opacity var(--transition-base);
 }
 
 .tech-name {

@@ -1,0 +1,59 @@
+/*
+  SkeletonImage
+  Placeholder de carga para imágenes externas.
+  El frame mide exactamente lo mismo que la <img> (su clase CSS ya le da
+  ancho y alto), por lo que no hay salto de layout mientras carga.
+*/
+
+.skeleton-frame {
+  position: relative;
+  display: inline-flex;
+}
+
+.skeleton-img {
+  transition: opacity var(--transition-base);
+}
+
+.skeleton-img.is-loading {
+  opacity: 0;
+}
+
+.skeleton-img.is-loaded {
+  opacity: 1;
+}
+
+/* Shimmer: brillo que recorre el placeholder hasta que la imagen carga */
+.skeleton-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    var(--color-bg-card) 45%,
+    rgba(255, 255, 255, 0.07) 50%,
+    var(--color-bg-card) 55%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 150% 0;
+  }
+
+  100% {
+    background-position: -50% 0;
+  }
+}
+
+/* Respeta a usuarios que prefieren menos animación */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer {
+    animation: none;
+  }
+
+  .skeleton-img {
+    transition: none;
+  }
+}

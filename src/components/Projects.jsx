@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import SkeletonImage from './SkeletonImage'
 import './Projects.css'
 
 const projects = [
@@ -74,7 +75,14 @@ export default function Projects() {
                   className={getSlideClass(index)}
                 >
                   <div className="project-card-top">
-                    <img src={project.logo} alt={`Logo de ${project.name}`} className="project-logo" loading="lazy" />
+                    <SkeletonImage
+                      src={project.logo}
+                      alt={`Logo de ${project.name}`}
+                      className="project-logo"
+                      frameClassName="project-logo-frame"
+                      radius="var(--radius-md)"
+                      loading="lazy"
+                    />
                     <div className="project-info">
                       <h3 className="project-name">{project.name}</h3>
                     </div>
